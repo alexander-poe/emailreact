@@ -7,6 +7,7 @@ import Messages from './components/messages'
 import Message from './components/messages'
 
 const routes = (
+	//learn about this
 	<Router history={hashHistory}>
 		<Route path='/:email_box' component={Mailbox}>
 			<IndexRoute component={Messages} />
@@ -14,8 +15,6 @@ const routes = (
 		</Route>
 	</Router>
 );
-
-
 
 document.addEventListener('DOMContentLoaded', () =>
 	ReactDOM.render(routes, document.getElementById('app'))
